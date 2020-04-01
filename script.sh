@@ -29,6 +29,7 @@ if [ -z "$CURLPATH" ]; then
 fi
 apt-get install python
 apt-get install unzip
+apt-get update
 # define version using information from GitHub
 get_latest_release() {
   curl --silent "https://api.github.com/repos/$1/releases/latest" | # Get latest release from GitHub api
