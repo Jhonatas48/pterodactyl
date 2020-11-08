@@ -1,1 +1,1 @@
-bash <(curl -sSLhttps://raw.githubusercontent.com/Jhonatas48/pterodactyl/master/script.sh)
+bash <(curl -s https://raw.githubusercontent.com/Jhonatas48/pterodactyl/master/script.sh)
