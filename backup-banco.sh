@@ -1,3 +1,3 @@
 diabackup= $(date "+%Y%m%d")
-backup="/home/root/backups-banco/$diabackup.sql"
-mysqldump --all-databases -u root > $backup
+backup="/home/root/backups-banco/"
+mysqldump --all-databases -u root > "$backup/$diabackup.sql"
