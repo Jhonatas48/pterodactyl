@@ -1,4 +1,6 @@
 diabackup= $(date "+%Y%m%d")
+export diabackup
 backup="/home/root/backups-banco/backup-"$diabackup".sql"
-printenv
+export backup
+printenv backup
 mysqldump --all-databases -u root > $backup
