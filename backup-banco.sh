@@ -1,4 +1,4 @@
 DATA=$(date +'%d-%m-%Y')
-backp= $HOME/backups-databases/backup-$DATA.sql
+backp= $HOME/backups-database
 mkdir -p $HOME/backups-databases|| exit 1
-mysqldump --all-databases > $backp
+mysqldump --all-databases > $backps/backup-$DATA.sql
