@@ -1,6 +1,5 @@
 DATA=$(date +'%d-%m-%Y')
-backp= $HOME/backups-database
-mkdir -p $HOME/backups-databases|| exit 1
-drt=$bckp/backup-$DATA.sql
-printenv | grep drt
+backp= /backups-database
+mkdir -p /backups-databases|| exit 1
+drt=/backups-databases/backup-$DATA.sql
 mysqldump --all-databases > $drt
