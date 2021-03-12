@@ -1,4 +1,4 @@
-USR=testw
+USR=teste
 SENHA='testando'
 DATA=$(date +'%d-%m-%Y')
 mkdir -p /backups-databases || exit 1
