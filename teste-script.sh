@@ -7,6 +7,6 @@ DRT=/backups-databases/backup-$DATA.sql
 if ["$SENHA" = "$VAZIO"];then
    mysqldump -u USR --all-databases > $DRT
 else
-   acho $SENHA
+   echo $SENHA
    mysqldump -u $USR --password=$SENHA --all-databases > $DRT
 fi
