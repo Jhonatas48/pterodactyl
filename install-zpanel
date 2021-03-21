@@ -1,0 +1,7 @@
+wget http://www.zvps.co.uk/sites/default/files/downloads/ubuntu-12-04/package/installer-x86_64-install.sh.x.tar.gz
+
+wget http://www.zvps.co.uk/sites/default/files/downloads/ubuntu-12-04/package/installer-x86-install.sh.x.tar.gz
+
+tar -xf installer-x86_64-install.sh.x.tar.gz
+
+sudo apt-get install ld-linux.so.2 curl
