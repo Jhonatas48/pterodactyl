@@ -6,6 +6,9 @@ DRT=/backups-databases/backup-$DATA.sql
 if [-z "$SENHA"]
 then
    mysqldump -u USR --all-databases > $DRT
+   mysqlcheck -u root --auto-repair --optimize --all-databases
 else
    mysqldump -u $USR --password=$SENHA --all-databases > $DRT
+   mysqlcheck -u $USR --password=$SENHA --auto-repair --optimize --all-databases
+   
 fi
