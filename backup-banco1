@@ -5,5 +5,3 @@ DATA=$(date +'%d-%m-%Y')
 mkdir -p /backups-databases || exit 1
 DRT=/backups-databases/backup-$DATA.sql
 mysqldump -u $USR --all-databases > $DRT
-mysqlcheck -u $USR --auto-repair --optimize --all-databases
-
