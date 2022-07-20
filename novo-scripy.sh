@@ -10,7 +10,7 @@ PANEL=v1.9.2
 WINGS=v1.6.4
 PANEL_LEGACY=v0.7.19
 DAEMON_LEGACY=v0.6.13
-PHPMYADMIN=latest
+PHPMYADMIN=5.2.0
 
 preflight(){
     warn "Script de Instalação e Atualização do Pterodactyl."
