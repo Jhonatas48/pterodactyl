@@ -123,7 +123,7 @@ os_check(){
     fi
     
     if [ "$lsb_dist" =  "ubuntu" ]; then
-        if  [ "$dist_version" != "20.04" ] && [ "$dist_version" != "18.04" ]; then
+        if  [ "$dist_version" != "20.04" ] && [ "$dist_version" != "18.04" ] && [ "$dist_version" != "22.04"]; then
             output "Versão não suportada do Ubuntu. Apenas Ubuntu 20.04 e 18.04 são suportados."
             exit 2
         fi
@@ -1894,7 +1894,7 @@ broadcast_database(){
         output "###############################################################"
         output "INFORMAÇÕES MARIADB / MySQL"
         output ""
-        output "Sua senha root MariaDB / MySQL é$rootpassword"
+        output "Sua senha root MariaDB / MySQL é $rootpassword"
         output ""
         output "Crie seu host MariaDB / MySQL com as seguintes informações:"
         output "Host: $SERVER_IP"
