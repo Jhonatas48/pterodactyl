@@ -1,4 +1,9 @@
-service mysql stop
+output(){
+ echo -e '\e[36m'$1'\e[0m';
+}
+ 
+mariadb_root_reset(){
+ service mysql stop
  mysqld_safe --skip-grant-tables >res 2>&1 &
  sleep 5
  rootpassword=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
@@ -10,3 +15,6 @@ service mysql stop
  pkill mysqld
  service mysql restart
  output "Your MariaDB root password is $rootpassword"
+}
+ 
+mariadb_root_reset
