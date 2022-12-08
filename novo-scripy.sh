@@ -708,7 +708,7 @@ install_pterodactyl() {
     output "Baixando o painel"
     mkdir -p /var/www/pterodactyl
     cd /var/www/pterodactyl
-    curl -Lo panel.tar.gz https://github.com/pterodactyl/panel/releases/download/${PANEL}/panel.tar.gz
+    curl -Lo panel.tar.gz  https://github.com/pterodactyl/panel/releases/latest/download/panel.tar.gz
     tar -xzvf panel.tar.gz
     chmod -R 755 storage/* bootstrap/cache/
 
@@ -1301,7 +1301,7 @@ install_wings() {
     output "Installing the Pterodactyl wings..."
     mkdir -p /etc/pterodactyl /srv/daemon-data
     cd /etc/pterodactyl
-    curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/download/${WINGS}/wings_linux_amd64
+    curl -L -o /usr/local/bin/wings "https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_$([[ "$(uname -m)" == "x86_64" ]] && echo "amd64" || echo "arm64")"
     chmod u+x /usr/local/bin/wings
     bash -c 'cat > /etc/systemd/system/wings.service' <<-'EOF'
 [Unit]
