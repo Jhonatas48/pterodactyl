@@ -4,9 +4,9 @@
     apt upgrade
     cd /var/www/pterodactyl/public
     wget https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-all-languages.zip
-    unzip phpMyAdmin-${PHPMYADMIN}-all-languages.zip
-    mv phpMyAdmin-${PHPMYADMIN}-all-languages phpmyadmin
-    rm -rf phpMyAdmin-${PHPMYADMIN}-all-languages.zip
+    unzip phpMyAdmin-5.2.1-all-languages.zip
+    mv phpMyAdmin-5.2.1-all-languages phpmyadmin
+    rm -rf phpMyAdmin-5.2.1-all-languages.zip
     cd /var/www/pterodactyl/public/phpmyadmin
 
     SERVER_IP=$(curl -s http://checkip.amazonaws.com)
