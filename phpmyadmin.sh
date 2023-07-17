@@ -3,7 +3,7 @@
     apt update
     apt upgrade
     cd /var/www/pterodactyl/public
-    wget https://files.phpmyadmin.net/phpMyAdmin/${PHPMYADMIN}/phpMyAdmin-${PHPMYADMIN}-all-languages.zip
+    wget https://www.phpmyadmin.net/files/${PHPMYADMIN}/phpMyAdmin-${PHPMYADMIN}-all-languages.zip
     unzip phpMyAdmin-${PHPMYADMIN}-all-languages.zip
     mv phpMyAdmin-${PHPMYADMIN}-all-languages phpmyadmin
     rm -rf phpMyAdmin-${PHPMYADMIN}-all-languages.zip
