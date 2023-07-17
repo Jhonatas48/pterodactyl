@@ -1,9 +1,7 @@
     output "Installing phpMyAdmin..."
     apt update
-	apt upgrade
-	apt install curl -y
-	cd /var/www/pterodactyl/public
-    rm -rf phpmyadmin
+    apt upgrade
+    cd /var/www/pterodactyl/public
     wget https://files.phpmyadmin.net/phpMyAdmin/${PHPMYADMIN}/phpMyAdmin-${PHPMYADMIN}-all-languages.zip
     unzip phpMyAdmin-${PHPMYADMIN}-all-languages.zip
     mv phpMyAdmin-${PHPMYADMIN}-all-languages phpmyadmin
