@@ -1,3 +1,4 @@
+    PHPMYADMIN=5.2.1
     output "Installing phpMyAdmin..."
     apt update
     apt upgrade
